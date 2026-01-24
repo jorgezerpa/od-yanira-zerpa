@@ -96,9 +96,9 @@ const DentistLinkPage = () => {
             <div className="mt-2 p-6 bg-white border-2 border-blue-50 rounded-[2rem] text-center shadow-inner animate-fadeIn">
               <h3 className="text-[#2b4fa1] font-bold text-lg mb-4">Mérida, Venezuela</h3>
               <div className="space-y-4 text-sm text-slate-500 leading-relaxed">
-                <p>Centro Clínico Marcial Ríos Morillo,<br/>Av. Urdaneta, Consultorio 12.</p>
-                <p>Clínica El Rosario,<br/>Sector Belén, Planta Baja.</p>
-                <p>Consultorio Particular,<br/>C.C. Las Tapias, Nivel 2.</p>
+                <p>Av. 3 entre calles 20 y 21,<br/>Edificio Empresarial Gran Mundo, Piso 4, local 4-2</p>
+                {/* <p>Clínica El Rosario,<br/>Sector Belén, Planta Baja.</p>
+                <p>Consultorio Particular,<br/>C.C. Las Tapias, Nivel 2.</p> */}
               </div>
             </div>
           )}
@@ -117,11 +117,14 @@ const DentistLinkPage = () => {
           {openSection === 'services' && (
             <div className="mt-2 p-6 bg-white border-2 border-indigo-50 rounded-[2rem] shadow-inner animate-fadeIn">
               <ul className="space-y-3 text-sm text-slate-500 text-center font-medium">
-                <li className="pb-2 border-b border-slate-50">Limpieza Dental Ultrasónica</li>
-                <li className="pb-2 border-b border-slate-50">Blanqueamiento Profesional</li>
-                <li className="pb-2 border-b border-slate-50">Restauraciones Estéticas</li>
-                <li className="pb-2 border-b border-slate-50">Diseño de Sonrisa</li>
-                <li>Ortodoncia Invisible</li>
+                <li className="pb-2 border-b border-slate-50">Revisión general</li>
+                <li className="pb-2 border-b border-slate-50">Limpieza dental</li>
+                <li className="pb-2 border-b border-slate-50">Endodoncia</li>
+                <li className="pb-2 border-b border-slate-50">Extracciones</li>
+                <li className="pb-2 border-b border-slate-50">Prótesis dental</li>
+                <li className="pb-2 border-b border-slate-50">Restauraciones</li>
+                <li className="pb-2 border-b border-slate-50">Odontopediatría</li>
+                <li className="pb-2 border-b border-slate-50">Radiografías periapicales</li>
               </ul>
             </div>
           )}
