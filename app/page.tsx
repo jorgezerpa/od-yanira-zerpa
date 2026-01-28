@@ -82,27 +82,6 @@ const DentistLinkPage = () => {
           <span className="bg-white/20 rounded-full p-1"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" /></svg></span>
         </a>
 
-        {/* Location Accordion */}
-        <div className="w-full">
-          <button 
-            onClick={() => toggleSection('location')}
-            className="flex items-center justify-between w-full px-6 py-4 bg-white/70 backdrop-blur-sm border-2 border-blue-50 rounded-[2rem] text-slate-600 transition-all duration-300"
-          >
-            <div className="flex items-center gap-4 font-bold text-sm tracking-tight"><span className="text-xl">📍</span> Ver Ubicación</div>
-            <svg className={`w-5 h-5 text-[#2b4fa1] transition-transform duration-300 ${openSection === 'location' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" /></svg>
-          </button>
-          
-          {openSection === 'location' && (
-            <div className="mt-2 p-6 bg-white border-2 border-blue-50 rounded-[2rem] text-center shadow-inner animate-fadeIn">
-              <h3 className="text-[#2b4fa1] font-bold text-lg mb-4">Mérida, Venezuela</h3>
-              <div className="space-y-4 text-sm text-slate-500 leading-relaxed">
-                <p>Av. 3 entre calles 20 y 21,<br/>Edificio Empresarial Gran Mundo, Piso 4, local 4-2</p>
-                {/* <p>Clínica El Rosario,<br/>Sector Belén, Planta Baja.</p>
-                <p>Consultorio Particular,<br/>C.C. Las Tapias, Nivel 2.</p> */}
-              </div>
-            </div>
-          )}
-        </div>
 
         {/* Services Accordion */}
         <div className="w-full">
@@ -153,3 +132,26 @@ const DentistLinkPage = () => {
 };
 
 export default DentistLinkPage;
+
+
+// {/* Location Accordion */}
+//         <div className="w-full">
+//           <button 
+//             onClick={() => toggleSection('location')}
+//             className="flex items-center justify-between w-full px-6 py-4 bg-white/70 backdrop-blur-sm border-2 border-blue-50 rounded-[2rem] text-slate-600 transition-all duration-300"
+//           >
+//             <div className="flex items-center gap-4 font-bold text-sm tracking-tight"><span className="text-xl">📍</span> Ver Ubicación</div>
+//             <svg className={`w-5 h-5 text-[#2b4fa1] transition-transform duration-300 ${openSection === 'location' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" /></svg>
+//           </button>
+          
+//           {openSection === 'location' && (
+//             <div className="mt-2 p-6 bg-white border-2 border-blue-50 rounded-[2rem] text-center shadow-inner animate-fadeIn">
+//               <h3 className="text-[#2b4fa1] font-bold text-lg mb-4">Mérida, Venezuela</h3>
+//               <div className="space-y-4 text-sm text-slate-500 leading-relaxed">
+//                 <p>Av. 3 entre calles 20 y 21,<br/>Edificio Empresarial Gran Mundo, Piso 4, local 4-2</p>
+//                 {/* <p>Clínica El Rosario,<br/>Sector Belén, Planta Baja.</p>
+//                 <p>Consultorio Particular,<br/>C.C. Las Tapias, Nivel 2.</p> */}
+//               </div>
+//             </div>
+//           )}
+//         </div>
